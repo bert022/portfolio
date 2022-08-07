@@ -84,7 +84,7 @@ export const Home = () => {
         visible={visibleSections.includes(projectOne.current)}
         index={1}
         title="BeLeaf"
-        description="Clothing e-Commerce website."
+        description="Clothing e-Commerce website. Not yet operational."
         buttonText="View project"
         buttonLink="https://comforting-brioche-679669.netlify.app/"
         model={{

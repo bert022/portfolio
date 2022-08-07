@@ -31,33 +31,29 @@ export const Uses = () => {
           placeholder={usesBackgroundPlaceholder}
           opacity={0.7}
         />
-        <ProjectHeader
-          title="Uses"
-          description="A somewhat comprehensive list of tools, apps, hardware, and more that I use on a daily basis to design and code things. And yeah, that is a Johnny Mnemonic GIF in the background."
-        />
+        <ProjectHeader title="Uses" description="Products used" />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
             <ProjectTextRow width="m">
               <ProjectSectionHeading>Design</ProjectSectionHeading>
               <ProjectSectionText as="div">
                 <List>
-                  <ListItem>
+                  {/* <ListItem>
                     <Link href="https://www.figma.com">Figma</Link> is my primary tool for
                     UI design these days. Made the switch from Sketch in 2020 and haven’t
                     looked back. I’ve also created{' '}
                     <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
                     you can install.
-                  </ListItem>
-                  <ListItem>
+                  </ListItem> */}
+                  {/* <ListItem>
                     Any motion graphics I create are created in Adobe After Effects. So
                     far I haven’t found a non-Adobe product that’s as good. If anyone has
                     suggestions please <Link href="/contact">message me</Link>.
-                  </ListItem>
+                  </ListItem> */}
                   <ListItem>
-                    For any 3D models I use{' '}
-                    <Link href="https://www.blender.org/">Blender</Link>. Since 2.8 it’s
-                    become way simpler to use and in a lot of ways better than expensive
-                    paid tools like 3DS Max or Maya.
+                    For any 3D models <Link href="https://www.blender.org/">Blender</Link>{' '}
+                    was used. Since 2.8 it’s become way simpler to use and in a lot of
+                    ways better than expensive paid tools like 3DS Max or Maya.
                   </ListItem>
                 </List>
               </ProjectSectionText>
