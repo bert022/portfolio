@@ -9,26 +9,19 @@ const { JSDOM } = require('jsdom');
 const app = express();
 const window = new JSDOM('').window;
 const DOMPurify = createDOMPurify(window);
-const { smtpHost, smtpUser, smtpPass } = process.env;
-
-// Body Parser Middleware
-app.use(bodyParser.urlencoded({ extended: false }));
-app.use(bodyParser.json());
+// const { smtpHost, smtpUser, smtpPass } = process.env;
 
 const mailTransport = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
+  host: smtp.ethereal.email,
   port: 587,
   secure: true,
   auth: {
     user: 'emmett.orn35@ethereal.email',
     pass: 'sdU6nb1kHZcbuQjfWM',
   },
-  tls: {
-    rejectUnauthorized: false,
-  },
 });
 
-const ORIGIN = 'https://localhost:3000/';
+const ORIGIN = 'localhost';
 const MAX_EMAIL_LENGTH = 512;
 const MAX_MESSAGE_LENGTH = 4096;
 
@@ -63,7 +56,7 @@ app.post('/message', async (req, res) => {
 
     // Send email
     const mailOptions = {
-      from: { email },
+      from: localhost,
       to: 'workbertquilay@gmail.com',
       subject: `New message from ${email}`,
       text: `From: ${email}\n\n${message}`,
