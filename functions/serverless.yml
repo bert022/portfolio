@@ -13,7 +13,7 @@ functions:
     events:
       - cloudFront:
           eventType: origin-response
-          origin: https://d39w4n5rrkxzvy.cloudfront.net
+          origin: https://d1r29hga1tzehq.cloudfront.net
   api:
     handler: index.handler
     events:
