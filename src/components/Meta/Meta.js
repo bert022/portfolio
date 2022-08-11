@@ -1,11 +1,11 @@
 import Head from 'next/head';
 
-const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
+// const siteUrl = process.env.NEXT_PUBLIC_WEBSITE_URL;
 const name = 'Bert Quilay';
 const twitterHandle = '@bertquilay';
-const defaultOgImage = `${siteUrl}/social-image.png`;
+// const defaultOgImage = `${siteUrl}/social-image.png`;
 
-export const Meta = ({ title, description, prefix = name, ogImage = defaultOgImage }) => {
+export const Meta = ({ title, description, prefix = name }) => {
   const titleText = [prefix, title].filter(Boolean).join(' | ');
 
   return (
@@ -31,7 +31,7 @@ export const Meta = ({ title, description, prefix = name, ogImage = defaultOgIma
       <meta name="twitter:title" content={titleText} />
       <meta name="twitter:site" content={twitterHandle} />
       <meta name="twitter:creator" content={twitterHandle} />
-      <meta name="twitter:image" content={ogImage} />
+      {/* <meta name="twitter:image" content={ogImage} /> */}
     </Head>
   );
 };

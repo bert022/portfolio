@@ -6,6 +6,6 @@ addons.setConfig({
     ...themes.dark,
     brandImage: '/icon.svg',
     brandTitle: 'Bert Quilay Components',
-    // brandUrl: 'https://hamishw.com',
+    brandUrl: 'https://visares.com',
   },
 });

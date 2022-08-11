@@ -5,7 +5,7 @@ import { Navbar } from 'components/Navbar';
 import { ThemeProvider } from 'components/ThemeProvider';
 import { tokens } from 'components/ThemeProvider/theme';
 import { VisuallyHidden } from 'components/VisuallyHidden';
-import * as Fathom from 'fathom-client';
+// import * as Fathom from 'fathom-client';
 import { AnimatePresence, LazyMotion, domAnimation, m } from 'framer-motion';
 import { useFoucFix, useLocalStorage } from 'hooks';
 import styles from 'layouts/App/App.module.css';
@@ -21,7 +21,7 @@ export const AppContext = createContext({});
 // const repoPrompt = `
 // __  __  __
 // \u005C \u005C \u005C \u005C \u005C\u2215\n \u005C \u005C\u2215\u005C \u005C\n  \u005C\u2215  \u005C\u2215
-// \n\nTaking a peek huh? Check out the source code: https://github.com/HamishMW/portfolio
+// \n\nTaking a peek huh? Check out the source code: https://github.com/bert022/portfolio
 // `;
 
 const App = ({ Component, pageProps }) => {
@@ -32,25 +32,25 @@ const App = ({ Component, pageProps }) => {
   useFoucFix();
 
   // Handle analytics pageview recording
-  useEffect(() => {
-    if (process.env.NODE_ENV === 'development') return;
+  // useEffect(() => {
+  //   if (process.env.NODE_ENV === 'development') return;
 
-    Fathom.load(process.env.NEXT_PUBLIC_FATHOM_ID, {
-      url: process.env.NEXT_PUBLIC_FATHOM_URL,
-    });
+  //   Fathom.load(process.env.NEXT_PUBLIC_FATHOM_ID, {
+  //     url: process.env.NEXT_PUBLIC_FATHOM_URL,
+  //   });
 
-    const onRouteChangeComplete = () => {
-      Fathom.trackPageview({ url: window.location.pathname });
-    };
+  //   const onRouteChangeComplete = () => {
+  //     Fathom.trackPageview({ url: window.location.pathname });
+  //   };
 
-    // Record a pageview when route changes
-    events.on('routeChangeComplete', onRouteChangeComplete);
+  //   // Record a pageview when route changes
+  //   events.on('routeChangeComplete', onRouteChangeComplete);
 
-    return () => {
-      events.off('routeChangeComplete', onRouteChangeComplete);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  //   return () => {
+  //     events.off('routeChangeComplete', onRouteChangeComplete);
+  //   };
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
 
   // useEffect(() => {
   //   console.info(`${repoPrompt}\n\n`);

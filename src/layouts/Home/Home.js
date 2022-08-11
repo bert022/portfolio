@@ -1,15 +1,20 @@
-import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
+// import gamestackTexture2Large from 'assets/gamestack-list-large.jpg';
 import gamestackTexture2Placeholder from 'assets/gamestack-list-placeholder.jpg';
-import gamestackTexture2 from 'assets/gamestack-list.jpg';
-import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
+// import gamestackTexture2 from 'assets/gamestack-list.jpg';
+import visaresTexture2 from 'assets/visares-yt-playlist.PNG';
+// import gamestackTextureLarge from 'assets/gamestack-login-large.jpg';
 import gamestackTexturePlaceholder from 'assets/gamestack-login-placeholder.jpg';
-import gamestackTexture from 'assets/gamestack-login.jpg';
+// import gamestackTexture from 'assets/gamestack-login.jpg';
+import visaresTexture from 'assets/visares-yt-home.png';
+
 // import sliceTextureLarge from 'assets/slice-app-large.jpg';
 // import sliceTexturePlaceholder from 'assets/slice-app-placeholder.jpg';
 // import sliceTexture from 'assets/slice-app.jpg';
-import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
+// import sprTextureLarge from 'assets/spr-lesson-builder-dark-large.jpg';
 import sprTexturePlaceholder from 'assets/spr-lesson-builder-dark-placeholder.jpg';
-import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+// import sprTexture from 'assets/spr-lesson-builder-dark.jpg';
+import beleafTexture from 'assets/beleaf-screen.png';
+
 import { Footer } from 'components/Footer';
 import { Meta } from 'components/Meta';
 import { Intro } from 'layouts/Home/Intro';
@@ -92,7 +97,7 @@ export const Home = () => {
           alt: 'Smart Sparrow lesson builder',
           textures: [
             {
-              srcSet: [sprTexture, sprTextureLarge],
+              srcSet: [beleafTexture],
               placeholder: sprTexturePlaceholder,
             },
           ],
@@ -113,11 +118,11 @@ export const Home = () => {
           alt: 'App login screen',
           textures: [
             {
-              srcSet: [gamestackTexture, gamestackTextureLarge],
+              srcSet: [visaresTexture],
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [gamestackTexture2, gamestackTexture2Large],
+              srcSet: [visaresTexture2],
               placeholder: gamestackTexture2Placeholder,
             },
           ],
