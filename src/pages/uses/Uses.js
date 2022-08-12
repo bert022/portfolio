@@ -1,5 +1,5 @@
 // import usesBackgroundPlaceholder from 'assets/uses-background-placeholder.jpg';
-import usesBackground from 'assets/uses-background.mp4';
+// import usesBackground from 'assets/uses-background.mp4';
 import { Footer } from 'components/Footer';
 import { Link } from 'components/Link';
 import { List, ListItem } from 'components/List';
@@ -26,11 +26,11 @@ export const Uses = () => {
         description="A list of hardware and software I use to do my thing"
       />
       <ProjectContainer className={styles.uses}>
-        <ProjectBackground
+        {/* <ProjectBackground
           src={{ src: usesBackground }}
           placeholder={usesBackgroundPlaceholder}
           opacity={0.7}
-        />
+        /> */}
         <ProjectHeader title="Uses" description="Products used" />
         <ProjectSection padding="none" className={styles.section}>
           <ProjectSectionContent>
