@@ -4,12 +4,12 @@ import { Post, postMarkdown } from 'layouts/Post';
 import { bundleMDX } from 'mdx-bundler';
 import { getMDXComponent } from 'mdx-bundler/client';
 import { useMemo } from 'react';
-import readingTime from 'reading-time';
+// import readingTime from 'reading-time';
 import rehypeImgSize from 'rehype-img-size';
 import rehypeMinify from 'rehype-preset-minify';
 import rehypeSlug from 'rehype-slug';
 import { POSTS_PATH, postFilePaths } from 'utils/mdx';
-import { formatTimecode } from 'utils/timecode';
+// import { formatTimecode } from 'utils/timecode';
 import rehypePrism from '@mapbox/rehype-prism';
 // import { generateOgImage } from './og-image';
 
