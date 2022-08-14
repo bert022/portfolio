@@ -4,25 +4,10 @@ provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
- region: ap-southeast-1
+  region: ap-southeast-1
 
 functions:
-    headers:
-      handler: headers.handler
-      timeout: 60
-      memorySize: 128
-      # events:
-      #   - cloudFront:
-      #       eventType: origin-response
-      #       origin: https://d39w4n5rrkxzvy.cloudfront.net
-    # api:
-    #   handler: index.handler
-    #   events:
-    #     - http:
-    #         path: /
-    #         method: ANY
-    #         cors: true
-    #     - http:
-    #         path: /{proxy+}
-    #         method: ANY
-    #         cors: true
+  headers:
+    handler: headers.handler
+    timeout: 60
+    memorySize: 128
