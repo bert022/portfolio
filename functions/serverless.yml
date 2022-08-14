@@ -7,8 +7,7 @@ provider:
   region: ap-southeast-1
 
 functions:
-  generateRandomNumber:
-    headers:
-      handler: headers.handler.generateRandomNumber
-      timeout: 60
-      memorySize: 128
+  headers:
+    handler: headers.handler
+    timeout: 60
+    memorySize: 128
