@@ -27,7 +27,7 @@ export const getStaticProps = async ({ params }) => {
   const postFilePath = path.join(POSTS_PATH, `${params.slug}.mdx`);
   const source = fs.readFileSync(postFilePath, 'utf-8');
 
-  const { code, frontmatter, matter } = await bundleMDX({
+  const { code, frontmatter } = await bundleMDX({
     source,
     mdxOptions(options) {
       options.remarkPlugins = [...(options.remarkPlugins ?? [])];

@@ -6,7 +6,6 @@ import { List, ListItem } from 'components/List';
 import { Meta } from 'components/Meta';
 import { Table, TableBody, TableCell, TableHeadCell, TableRow } from 'components/Table';
 import {
-  ProjectBackground,
   ProjectContainer,
   ProjectHeader,
   ProjectSection,

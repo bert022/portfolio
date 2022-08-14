@@ -28,6 +28,7 @@
     "stylelint-config-standard": "^26.0.0"
   },
   "dependencies": {
+    "@babel/core": "^7.18.10",
     "fathom-client": "^3.5.0",
     "framer-motion": "^6.5.1",
     "mdx-bundler": "^9.0.1",
